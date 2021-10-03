@@ -1,10 +1,10 @@
-
-
+import { FooterContainer } from './containers/footer'
+import { JumbotronContainer } from './containers/jumbotron'
 export default function App() {
   return (
-    <div>
-     <h1>Hello World</h1>
-    </div>
-  );
+    <>
+      <JumbotronContainer />
+      <FooterContainer />
+    </>
+  )
 }
-

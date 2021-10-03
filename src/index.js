@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react'
 // import ReactDOM from 'react-dom';
-import {render} from 'react-dom';
-import App from './app';
-render(<App />,document.getElementById('root')
-);
+import { render } from 'react-dom'
+import 'normalize.css'
+import App from './app'
+import { GlobalStyles } from './global-styles'
 
-
+render(
+  <Fragment>
+    <GlobalStyles />
+    <App />
+  </Fragment>,
+  document.getElementById('root')
+)
