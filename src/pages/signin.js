@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { useState, useContext } from 'react'
 import { useHistory } from 'react-router-dom'
 import { FirebaseContext } from '../context/firebase'
@@ -20,7 +19,6 @@ export default function Signin() {
   const handleSignin = (event) => {
     event.preventDefault()
 
-    // Firebase works here
     firebase
       .auth()
       .signInWithEmailAndPassword(emailAddress, password)
@@ -62,7 +60,7 @@ export default function Signin() {
             New to Netflix? <Form.Link to='/signup'>Sign up now.</Form.Link>
           </Form.Text>
           <Form.TextSmall>
-            This page is protected by Google reCAPTCHA to ensure you're not a
+            This page is protected by Google reCAPTCHA to ensure you are not a
             bot. Learn more.
           </Form.TextSmall>
         </Form>
