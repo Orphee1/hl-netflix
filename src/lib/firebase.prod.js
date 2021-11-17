@@ -5,7 +5,7 @@ import 'firebase/auth'
 import { seedDatabase } from '../seed'
 
 const config = {
-  apiKey: 'AIzaSyAtHElKRkJw4bWK0cb1jpOaaCyOVGpGy-0',
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: 'netflix-d46a2.firebaseapp.com',
   projectId: 'netflix-d46a2',
   storageBucket: 'netflix-d46a2.appspot.com',
