@@ -1,8 +1,7 @@
-/* eslint-disable */
 import Firebase from 'firebase/app'
 import 'firebase/firestore'
 import 'firebase/auth'
-import { seedDatabase } from '../seed'
+// import { seedDatabase } from '../seed'
 
 const config = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
